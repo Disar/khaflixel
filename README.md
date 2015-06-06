@@ -1,7 +1,7 @@
 ![KhaFlixel 0.1](http://ratalaika.com/flixel-js/logo.png)
 
 ##KhaFlixel 0.1
-KhaFlixel is a port of the famous AS3 library Flixel to Kha.
+KhaFlixel is a port of the famous OpenFL library Flixel to Kha.
 
 # Index
 - [About](#about)
@@ -13,7 +13,7 @@ KhaFlixel is a port of the famous AS3 library Flixel to Kha.
 
 <a name="#about"></a>
 ##About
-KhaFlixel is a port of the famous AS3 library Flixel to Kha.
+KhaFlixel is a port of the famous OpenFL library Flixel to Kha.
 We used HaxeFlixel structure for convenience.
 It has some improvements and also some new stuff like support for SpriteSheets or Tiled Map format parser.
 
@@ -26,7 +26,7 @@ The main development is by [Ratalaika Games](http://www.ratalaikagames.com)
 Things you can do now:
 * Why not following us on [Twitter](https://twitter.com/RatalaikaGames)?
 * You can check out the [examples](https://github.com/ratalaika/flixel-js-examples)!
-* Also why not reading the [documentation](http://khaflixel.ratalaika.com/docs)?
+* Also why not reading the [documentation](http://khaflixel.ratalaikagames.com/docs)?
 
 <a name="#features"></a>
 ##Features
