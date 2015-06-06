@@ -60,9 +60,11 @@ Things you can do now:
 <a name="#getting-started"></a>
 ##Getting Started
 ***Installing NodeJS***
+
 You can get a copy of NodeJS on its site <a target="_blank" href="http://nodejs.org/">here</a> and install it.
 
 ***Update NodeJS***
+
 If you have NodeJS already installed make sure it's updated!
 You can do so with the following commands.
 <pre lang="bash">>
