@@ -60,12 +60,7 @@ Things you can do now:
 <a name="#getting-started"></a>
 ##Getting Started
 ***Installing NodeJS***
-You can get a copy of NodeJS on its site <a target="_blank" href="http://nodejs.org/">here</a> and install it. After installing it you will want to install grunt from the command line.
-If you have installed Grunt in the past you may want to remove it first:
-<pre lang="javascript">> npm uninstall -g grunt</pre>
-Now you can install Grunt's command line tools by typing out the following:
-<pre lang="javascript">> npm install -g grunt-cli</pre>
-From here, Grunt should work via the command line.
+You can get a copy of NodeJS on its site <a target="_blank" href="http://nodejs.org/">here</a> and install it.
 
 ***Update NodeJS***
 If you have NodeJS already installed make sure it's updated!
