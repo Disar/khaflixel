@@ -1,0 +1,397 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Flx",
+				"FlxObject"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"fl",
+				"Flixel"
+			],
+			[
+				"reset",
+				"Reset"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"Haxe",
+				"Haxe: Choose Build Target"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"grun",
+				"Grunt"
+			],
+			[
+				"gurn",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"Gru",
+				"Grunt"
+			],
+			[
+				"gr",
+				"Grunt"
+			],
+			[
+				"g",
+				"Grunt"
+			],
+			[
+				"Grunt",
+				"Grunt"
+			],
+			[
+				"grn",
+				"Grunt"
+			],
+			[
+				"Grun",
+				"Grunt"
+			],
+			[
+				"Gr",
+				"Grunt"
+			],
+			[
+				"GR",
+				"Grunt"
+			],
+			[
+				"Griun",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/6.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/10.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/11.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/12.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/13.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/14.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/15.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/16.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/17.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/18.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/19.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/22.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/23.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/24.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/25.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/26.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/27.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/28.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/29.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/31.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/32.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/33.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/34.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/35.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/36.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/37.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/38.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/41.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/43.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/45.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/47.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/49.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/53.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/55.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/56.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/57.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/58.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/59.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/60.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/61.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/64.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/65.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/67.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/68.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/69.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/70.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/71.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/72.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/73.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/74.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/75.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/76.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/77.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/78.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/79.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/80.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/81.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/83.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/85.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/88.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/91.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/95.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/97.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/99.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/100.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/102.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/105.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/106.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/108.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/110.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/112.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/114.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/116.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/118.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/120.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/122.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/125.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/127.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/128.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/130.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/133.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/134.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/136.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/137.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/140.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/143.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/145.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/149.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/152.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/153.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/158.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/161.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/164.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/167.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/169.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/170.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/171.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/172.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/175.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/179.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/182.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/184.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/186.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/192.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/195.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/196.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/197.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/200.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/201.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/202.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/203.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/204.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/206.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/215.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/216.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/217.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/220.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/222.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/224.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/226.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/227.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/230.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/235.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/238.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/240.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/243.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/244.svg",
+		"/Users/ratalaika/SWFs_orig/Meat Boy_files/shapes/245.svg"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"resumeAudio",
+			"caja",
+			"arbol",
+			"MenuState",
+			"onm",
+			"foundLaunchpad",
+			"foundLaunch",
+			"set(index",
+			"this.",
+			"onPowerup",
+			"getFrame()",
+			"getFrame()?(this.player",
+			"Flixel.FlxG.getState().spawnPowerup(x, y)",
+			"Flixel.FlxG.getState().spawnPowerup(x,y)",
+			"bombsDec",
+			"Assets.map",
+			"emptyColor",
+			"this.bombbox.",
+			"healthBoxes",
+			"healthBoxesthis",
+			"healthBoxes",
+			"ceil",
+			"ImgFootsteps",
+			"states",
+			"},",
+			"new int[]{",
+			"Spi"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rock",
+			"caja",
+			"PlayState",
+			"pruebald",
+			"",
+			"entities",
+			"]",
+			"[",
+			"Flixel.Flx"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 234.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true
+}

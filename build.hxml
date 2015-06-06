@@ -1,0 +1,3 @@
+-cp src
+-js html5/kha.js
+-main Main
