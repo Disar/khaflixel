@@ -1,9 +1,7 @@
 package flixel.util;
 
-import flash.display.BitmapData;
-import flash.geom.Matrix;
-import flash.Lib;
-import flash.net.URLRequest;
+import kha.math.Matrix3;
+import kha.Canvas;
 import flixel.FlxG;
 import flixel.math.FlxMath;
 import flixel.system.FlxAssets;
@@ -395,16 +393,16 @@ class FlxStringUtil
 	}
 	
 	/**
-	 * Converts a BitmapData object to a comma-separated string. Black pixels are flagged as 'solid' by default,
+	 * Converts a Canvas object to a comma-separated string. Black pixels are flagged as 'solid' by default,
 	 * non-black pixels are set as non-colliding. Black pixels must be PURE BLACK.
 	 * 
-	 * @param	Bitmap		A Flash BitmapData object, preferably black and white.
+	 * @param	Bitmap		A Flash Canvas object, preferably black and white.
 	 * @param	Invert		Load white pixels as solid instead.
 	 * @param	Scale		Default is 1. Scale of 2 means each pixel forms a 2x2 block of tiles, and so on.
 	 * @param	ColorMap	An array of color values (alpha values are ignored) in the order they're intended to be assigned as indices
 	 * @return	A comma-separated string containing the level data in a FlxTilemap-friendly format.
 	 */
-	public static function bitmapToCSV(Bitmap:BitmapData, Invert:Bool = false, Scale:Int = 1, ?ColorMap:Array<FlxColor>):String
+	public static function bitmapToCSV(Bitmap:Canvas, Invert:Bool = false, Scale:Int = 1, ?ColorMap:Array<FlxColor>):String
 	{
 		if (Scale < 1) 
 		{
@@ -414,8 +412,8 @@ class FlxStringUtil
 		// Import and scale image if necessary
 		if (Scale > 1)
 		{
-			var bd:BitmapData = Bitmap;
-			Bitmap = new BitmapData(Bitmap.width * Scale, Bitmap.height * Scale);
+			var bd:Canvas = Bitmap;
+			Bitmap = new Canvas(Bitmap.width * Scale, Bitmap.height * Scale);
 			
 			#if !flash
 			var bdW:Int = bd.width;
@@ -438,7 +436,7 @@ class FlxStringUtil
 				}
 			}
 			#else
-			var mtx = new Matrix();
+			var mtx = new Matrix3();
 			mtx.scale(Scale, Scale);
 			Bitmap.draw(bd, mtx);
 			#end
@@ -520,7 +518,7 @@ class FlxStringUtil
 	 */
 	public static function imageToCSV(ImageFile:Dynamic, Invert:Bool = false, Scale:Int = 1, ?ColorMap:Array<FlxColor>):String
 	{
-		var tempBitmapData:BitmapData;
+		var tempCanvas:Canvas;
 		
 		if (Std.is(ImageFile, String))
 		{

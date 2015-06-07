@@ -1,9 +1,7 @@
 package flixel.util;
 
 import flixel.util.FlxPool;
-import flash.display.BitmapData;
-import flash.display.DisplayObject;
-import flash.display.DisplayObjectContainer;
+import kha.Canvas;
 
 class FlxDestroyUtil
 {
@@ -72,12 +70,12 @@ class FlxDestroyUtil
 	
 	#if !macro
 	/**
-	 * Checks if a BitmapData object is not null before calling dispose() on it, always returns null.
+	 * Checks if a Canvas object is not null before calling dispose() on it, always returns null.
 	 * 
 	 * @param	Bitmap	A BitampData to be disposed if not null
 	 * @return 	null
 	 */
-	public static function dispose(bitmapData:BitmapData):BitmapData
+	public static function dispose(bitmapData:Canvas):Canvas
 	{
 		if (bitmapData != null)
 		{
@@ -87,9 +85,9 @@ class FlxDestroyUtil
 	}
 	
 	/**
-	 * Checks if a BitmapData object is not null and it's size isn't equal to specified one before calling dispose() on it.
+	 * Checks if a Canvas object is not null and it's size isn't equal to specified one before calling dispose() on it.
 	 */
-	public static function disposeIfNotEqual(bitmapData:BitmapData, width:Float, height:Float):BitmapData
+	public static function disposeIfNotEqual(bitmapData:Canvas, width:Float, height:Float):Canvas
 	{
 		if (bitmapData != null && (bitmapData.width != width || bitmapData.height != height))
 		{
@@ -101,15 +99,6 @@ class FlxDestroyUtil
 			return bitmapData;
 		}
 		
-		return null;
-	}
-	
-	public static function removeChild<T:DisplayObject>(parent:DisplayObjectContainer, child:T):T
-	{
-		if (parent != null && child != null && parent.contains(child))
-		{
-			parent.removeChild(child);
-		}
 		return null;
 	}
 	#end

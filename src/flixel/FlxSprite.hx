@@ -1,10 +1,12 @@
 package flixel;
 
-import flash.display.BitmapData;
 import flash.display.BlendMode;
 import flash.geom.ColorTransform;
-import flash.geom.Point;
-import flash.geom.Rectangle;
+
+import kha.Canvas;
+import kha.math.Vector2;
+import kha.math.Rectangle;
+
 import flixel.animation.FlxAnimation;
 import flixel.animation.FlxAnimationController;
 import flixel.FlxBasic;
@@ -27,7 +29,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxDestroyUtil;
 
 @:keep @:bitmap("assets/images/logo/default.png")
-private class GraphicDefault extends BitmapData {}
+private class GraphicDefault extends Canvas {}
 
 // TODO: add updateSizeFromFrame bool which will tell sprite whether to update it's size to frame's size (when frame setter is called) or not (useful for sprites with adjusted hitbox)
 // And don't forget about sprites with clipped frames: what i should do with their size in this case?
@@ -40,7 +42,7 @@ private class GraphicDefault extends BitmapData {}
  *
  * Load an image onto a sprite using the loadGraphic*() functions, 
  * or create a base monochromatic rectangle using makeGraphic().
- * The image BitmapData is stored in the pixels field.
+ * The image Canvas is stored in the pixels field.
  */
 class FlxSprite extends FlxObject
 {
@@ -49,11 +51,11 @@ class FlxSprite extends FlxObject
 	 */
 	public var animation:FlxAnimationController;
 	/**
-	 * The actual Flash BitmapData object representing the current display state of the sprite.
+	 * The actual Flash Canvas object representing the current display state of the sprite.
 	 * WARNING: can be null in FLX_RENDER_TILE mode unless you call getFlxFrameBitmapData() beforehand.
 	 */
 	// TODO: maybe convert this var to property...
-	public var framePixels:BitmapData;
+	public var framePixels:Canvas;
 	/**
 	 * Controls whether the object is smoothed when rotated, affects performance.
 	 */
@@ -65,10 +67,10 @@ class FlxSprite extends FlxObject
 	public var dirty:Bool = true;
 	
 	/**
-	 * Set pixels to any BitmapData object.
+	 * Set pixels to any Canvas object.
 	 * Automatically adjust graphic size and render helpers.
 	 */
-	public var pixels(get, set):BitmapData;
+	public var pixels(get, set):Canvas;
 	/**
 	 * Link to current FlxFrame from loaded atlas
 	 */
@@ -166,7 +168,7 @@ class FlxSprite extends FlxObject
 	/**
 	 * Internal, reused frequently during drawing and animating.
 	 */
-	private var _flashPoint:Point;
+	private var _flashPoint:Vector2;
 	/**
 	 * Internal, reused frequently during drawing and animating.
 	 */
@@ -178,7 +180,7 @@ class FlxSprite extends FlxObject
 	/**
 	 * Internal, reused frequently during drawing and animating. Always contains (0,0).
 	 */
-	private var _flashPointZero:Point;
+	private var _flashPointZero:Vector2;
 	/**
 	 * Internal, helps with animation, caching and drawing.
 	 */
@@ -225,10 +227,10 @@ class FlxSprite extends FlxObject
 		
 		animation = new FlxAnimationController(this);
 		
-		_flashPoint = new Point();
+		_flashPoint = new Vector2();
 		_flashRect = new Rectangle();
 		_flashRect2 = new Rectangle();
-		_flashPointZero = new Point();
+		_flashPointZero = new Vector2();
 		offset = FlxPoint.get();
 		origin = FlxPoint.get();
 		scale = FlxPoint.get(1, 1);
@@ -311,8 +313,8 @@ class FlxSprite extends FlxObject
 	 * @param	Width		Optional, specify the width of your sprite (helps FlxSprite figure out what to do with non-square sprites or sprite sheets).
 	 * @param	Height		Optional, specify the height of your sprite (helps FlxSprite figure out what to do with non-square sprites or sprite sheets).
 	 * @param	Unique		Optional, whether the graphic should be a unique instance in the graphics cache.  Default is false.
-	 *				Set this to true if you want to modify the pixels field without changing the pixels of other sprites with the same BitmapData.
-	 * @param	Key		Optional, set this parameter if you're loading BitmapData.
+	 *				Set this to true if you want to modify the pixels field without changing the pixels of other sprites with the same Canvas.
+	 * @param	Key		Optional, set this parameter if you're loading Canvas.
 	 * @return	This FlxSprite instance (nice for chaining stuff together, if you're into that).
 	 */
 	public function loadGraphic(Graphic:FlxGraphicAsset, Animated:Bool = false, Width:Int = 0, Height:Int = 0, Unique:Bool = false, ?Key:String):FlxSprite
@@ -356,7 +358,7 @@ class FlxSprite extends FlxObject
 	 * @param	Frame			If the Graphic has a single row of square animation frames on it, you can specify which of the frames you want to use here.  Default is -1, or "use whole graphic."
 	 * @param	AntiAliasing	Whether to use high quality rotations when creating the graphic.  Default is false.
 	 * @param	AutoBuffer		Whether to automatically increase the image size to accomodate rotated corners.  Default is false.  Will create frames that are 150% larger on each axis than the original frame or graphic.
-	 * @param	Key				Optional, set this parameter if you're loading BitmapData.
+	 * @param	Key				Optional, set this parameter if you're loading Canvas.
 	 * @return	This FlxSprite instance (nice for chaining stuff together, if you're into that).
 	 */
 	public function loadRotatedGraphic(Graphic:FlxGraphicAsset, Rotations:Int = 16, Frame:Int = -1, AntiAliasing:Bool = false, AutoBuffer:Bool = false, ?Key:String):FlxSprite
@@ -367,7 +369,7 @@ class FlxSprite extends FlxObject
 			return this;
 		}
 		
-		var brush:BitmapData = brushGraphic.bitmap;
+		var brush:Canvas = brushGraphic.bitmap;
 		var key:String = brushGraphic.key;
 		
 		if (Frame >= 0)
@@ -378,8 +380,8 @@ class FlxSprite extends FlxObject
 			Frame = (framesNum > Frame) ? Frame : (Frame % framesNum);
 			key += ":" + Frame;
 			
-			var full:BitmapData = brush;
-			brush = new BitmapData(brushSize, brushSize, true, FlxColor.TRANSPARENT);
+			var full:Canvas = brush;
+			brush = new Canvas(brushSize, brushSize, true, FlxColor.TRANSPARENT);
 			_flashRect.setTo(Frame * brushSize, 0, brushSize, brushSize);
 			brush.copyPixels(full, _flashRect, _flashPointZero);
 		}
@@ -390,7 +392,7 @@ class FlxSprite extends FlxObject
 		var tempGraph:FlxGraphic = FlxG.bitmap.get(key);
 		if (tempGraph == null)
 		{
-			var bitmap:BitmapData = FlxBitmapDataUtil.generateRotations(brush, Rotations, AntiAliasing, AutoBuffer);
+			var bitmap:Canvas = FlxBitmapDataUtil.generateRotations(brush, Rotations, AntiAliasing, AutoBuffer);
 			tempGraph = FlxGraphic.fromBitmapData(bitmap, false, key);
 		}
 		
@@ -413,7 +415,7 @@ class FlxSprite extends FlxObject
 	
 	/**
 	 * Helper method which makes it possible to use FlxFrames as graphic source for sprite's loadRotatedGraphic() method 
-	 * (since it accepts only FlxGraphic, BitmapData and String types).
+	 * (since it accepts only FlxGraphic, Canvas and String types).
 	 * 
 	 * @param	frame			Frame to load into this sprite.
 	 * @param	rotations		The number of rotation frames the final sprite should have. For small sprites this can be quite a large number (360 even) without any problems.
@@ -472,7 +474,7 @@ class FlxSprite extends FlxObject
 	public function graphicLoaded():Void {  }
 	
 	/**
-	 * Resets _flashRect variable used for frame bitmapData calculation
+	 * Resets _flashRect variable used for frame Canvas calculation
 	 */
 	public inline function resetSize():Void
 	{
@@ -685,7 +687,7 @@ class FlxSprite extends FlxObject
 			throw "Cannot stamp to or from a FlxSprite with no graphics.";
 		}
 		
-		var bitmapData:BitmapData = Brush.getFlxFrameBitmapData();
+		var bitmapData:Canvas = Brush.getFlxFrameBitmapData();
 		
 		if (isSimpleRenderBlit()) // simple render
 		{
@@ -866,7 +868,7 @@ class FlxSprite extends FlxObject
 		}
 		else // 2. Check pixel at (_flashPoint.x, _flashPoint.y)
 		{
-			var frameData:BitmapData = getFlxFrameBitmapData();
+			var frameData:Canvas = getFlxFrameBitmapData();
 			var pixelColor:FlxColor = frameData.getPixel32(Std.int(_flashPoint.x), Std.int(_flashPoint.y));
 			var pixelAlpha:Int = (pixelColor >> 24) & 0xFF;
 			return (pixelAlpha * alpha >= Mask);
@@ -896,9 +898,9 @@ class FlxSprite extends FlxObject
 	}
 	
 	/**
-	 * Retrieves BitmapData of current FlxFrame. Updates framePixels.
+	 * Retrieves Canvas of current FlxFrame. Updates framePixels.
 	 */
-	public function getFlxFrameBitmapData():BitmapData
+	public function getFlxFrameBitmapData():Canvas
 	{
 		if (_frame != null && dirty)
 		{
@@ -1090,7 +1092,7 @@ class FlxSprite extends FlxObject
 		return this;
 	}
 	
-	private function get_pixels():BitmapData
+	private function get_pixels():Canvas
 	{
 		#if !FLX_NO_DEBUG
 		if (graphic == null)
@@ -1101,7 +1103,7 @@ class FlxSprite extends FlxObject
 		return graphic.bitmap;
 	}
 	
-	private function set_pixels(Pixels:BitmapData):BitmapData
+	private function set_pixels(Pixels:Canvas):Canvas
 	{
 		var key:String = FlxG.bitmap.findKeyForBitmap(Pixels);
 		
