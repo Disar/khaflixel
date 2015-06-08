@@ -1,4 +1,5 @@
 package;
+import flixel.FlxBasic;
 import kha.Framebuffer;
 import kha.Game;
 
@@ -12,7 +13,8 @@ class KhaFlixelGame extends Game
 
 	public function new() 
 	{
-		super("KhaFlixel",false);
+		super("KhaFlixel", false);
+		new FlxBasic();
 	}
 	
 	override public function render(frame:Framebuffer):Void 
