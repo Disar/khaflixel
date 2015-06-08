@@ -12,6 +12,6 @@
 		
 	],
 	"sources": [
-		"Libs/flixel"
+		"Libs/"
 	]
 }
